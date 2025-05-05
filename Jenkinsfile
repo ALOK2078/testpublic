@@ -4,7 +4,6 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                cleanWs()
                 sh '''
                     ls -l
                     echo 'alok mishra'
