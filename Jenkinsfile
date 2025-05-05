@@ -14,4 +14,14 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            echo 'It's time to Archive the artifacts'
+            archiveArtifaacts artifacts: '*.txt'
+        }
+        always {
+            echo 'This will always run'
+            cleanWs()
+        }
+    }
 }
