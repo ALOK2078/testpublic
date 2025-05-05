@@ -4,8 +4,13 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
-                echo 'This is a Jenkins pipeline example by Alok'
+                sh '''
+                #!/bin/bash
+                # This is a simple shell script\
+                ls -l
+                echo 'alok mishra
+                '''
+            
             }
         }
     }
