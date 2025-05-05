@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        cleanWs()      
         stage('Hello') {
             steps {
+                cleanWs()
                 sh '''
                     ls -l
                     echo 'alok mishra'
