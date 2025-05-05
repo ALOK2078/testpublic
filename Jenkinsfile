@@ -18,6 +18,5 @@ pipeline {
             echo 'time to Archive the artifacts'
             archiveArtifacts artifacts: '*.txt'
         }
-        }
     }
 }
