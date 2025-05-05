@@ -15,7 +15,7 @@ pipeline {
     post {
         success {
             echo 'time to Archive the artifacts'
-            archiveArtifacts artifacts: '*.txt'
+            archiveArtifacts artifacts: '**/*.text'
         }
         always {
             echo 'This will always run'
