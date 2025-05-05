@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        clearWs()      
+        cleanWs()      
         stage('Hello') {
             steps {
                 sh '''
