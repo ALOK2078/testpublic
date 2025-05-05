@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+        clearWs()      
         stage('Hello') {
             steps {
                 sh '''
@@ -17,9 +18,6 @@ pipeline {
             echo 'time to Archive the artifacts'
             archiveArtifacts artifacts: '*.txt'
         }
-        always {
-            echo 'This will always run'
-            cleanWs()
         }
     }
 }
