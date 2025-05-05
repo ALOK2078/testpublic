@@ -5,6 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                echo 'This is a Jenkins pipeline example by Alok'
             }
         }
     }
